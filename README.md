@@ -1,4 +1,4 @@
-# Tests of file formats for FYST data
+# Tests of file formats for FYST housekeeping data
 
 We'd like to find a file format with the following features:
 
