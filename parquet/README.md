@@ -22,4 +22,6 @@ Cons:
     - Neither `pyarrow` nor `fastparquet` can read `DELTA_BINARY_PACKED`.
     - Go can't write `BYTE_STREAM_SPLIT`.
 * `fastparquet` can't handle zstd compression.
+* On Linux, running in docker and writing to a bind mount is ~5% slower versus running natively.
+  On macOS, the slowdown is much larger (~80%).
 
