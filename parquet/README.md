@@ -14,6 +14,7 @@ Cons:
 * [Website](https://parquet.apache.org) out of date.
 * A little unclear who's in charge. Has the [Arrow](https://arrow.apache.org) project has taken over?
 * Arrow development is all in one giant monorepo.
+* [Compatibility issues between Spark and Arrow](https://issues.apache.org/jira/browse/ARROW-6057)?
 
 ## Test results (Nov 2020)
 
