@@ -6,3 +6,13 @@ We'd like to find a file format with the following features:
 * Excellent language support (at least C/C++, Go, Python, & Julia).
 * Built-in compression.
 
+## Candidates
+
+| Format  | comments |
+| ------------- | ------------- |
+| Fits  |   |
+| HDF5  |   |
+| ASDF  |   |
+| Parquet |   |
+| Excel   |   |
+| CSV | |
