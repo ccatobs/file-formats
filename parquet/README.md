@@ -18,11 +18,16 @@ Cons:
 
 ## Test results (Nov 2020)
 
-* A simulated ACU datastream compressed by a factor of ~1.6.
+* A simulated ACU datastream compressed by a factor of ~1.6 with zstd.
 * Limited support for encodings:
     - Neither `pyarrow` nor `fastparquet` can read `DELTA_BINARY_PACKED`.
     - Go can't write `BYTE_STREAM_SPLIT`.
 * `fastparquet` can't handle zstd compression.
 * On Linux, running in docker and writing to a bind mount is ~5% slower versus running natively.
   On macOS, the slowdown is much larger (~80%).
+
+## Test results (Oct 2021)
+
+* `fastparquet` can now handle zstd compression.
+* `pyarrow` is much faster at reading than `fastparquet`.
 
