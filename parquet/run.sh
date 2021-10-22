@@ -13,7 +13,12 @@ for test in test1 test2; do
     go build -tags "$test" -o write_go
     ./write_go "$filename"
 
-    announce "running Python read $test"
-    ./read.py "$filename"
+    set +e
+    announce "running Python (pyarrow) read $test"
+    ./read.py pyarrow "$filename"
+
+    announce "running Python (fastparquet) read $test"
+    ./read.py fastparquet "$filename"
+    set -e
 done
 
