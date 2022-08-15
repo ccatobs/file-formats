@@ -1,0 +1,6 @@
+*.csv
+*.gz
+*.txt
+*.zip
+/write-delta
+/write-plain
